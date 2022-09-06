@@ -1,0 +1,63 @@
+name: game_commerce_flutter
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0-149.0.dev <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.5
+  # Create bloc in flutter
+  flutter_bloc: ^8.1.1
+  # Create dependency injector in flutter
+  get_it: ^7.2.0
+  # Use for == operator
+  equatable: ^2.0.5
+  # Easily restart your application from scratch, losing any previous state
+  flutter_phoenix: ^1.1.0
+  # Use for localization instead of flutter_intl
+  easy_localization: ^3.0.1
+  # Use for animated splash effect
+  animated_splash_screen: ^1.3.0
+  # Use for navigation manager
+  get: ^4.6.5
+  # Use instead of share preference
+  get_storage: ^2.0.3
+  flutter_screenutil: ^5.5.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.10.0
+  flutter_lints: ^2.0.1
+
+flutter_icons:
+  android: true
+  ios: true
+  min_sdk_android: 21
+  image_path: "assets/icons/app_icon.png"
+  adaptive_icon_background: "#4B0560"
+  adaptive_icon_foreground: "assets/icons/app_icon_512.png"
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "assets/icons/app_icon_1024.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/icons/app_icon_1024.png"
+    icon_size: 48 # min:48, max:256, default: 48
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
