@@ -30,6 +30,7 @@ dependencies:
   # Use instead of share preference
   get_storage: ^2.0.3
   flutter_screenutil: ^5.5.4
+  google_fonts: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -48,8 +49,8 @@ flutter_icons:
   web:
     generate: true
     image_path: "assets/icons/app_icon_1024.png"
-    background_color: "#hexcode"
-    theme_color: "#hexcode"
+    background_color: "#4B0560"
+    theme_color: "#4B0560"
   windows:
     generate: true
     image_path: "assets/icons/app_icon_1024.png"

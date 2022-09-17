@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class FontConstants {
-  static const String fontFamily = "Style";
+  static const String fontFamily = "Nunito";
 }
 
 class FontWeightManager {
   static const FontWeight light = FontWeight.w300;
-  static const FontWeight regular = FontWeight.normal;
+  static const FontWeight regular = FontWeight.w400;
   static const FontWeight medium = FontWeight.w500;
-  static const FontWeight bold = FontWeight.bold;
+  static const FontWeight bold = FontWeight.w700;
 }
 
 class FontSize {

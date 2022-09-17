@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'font_manager.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 TextStyle _getTextStyle(
     double fontSize, FontWeight fontWeight, Color color, FontStyle fontStyle) {
-  return TextStyle(
+  return GoogleFonts.nunito().copyWith(
       fontSize: fontSize,
       fontFamily: FontConstants.fontFamily,
       color: color,
@@ -13,8 +14,7 @@ TextStyle _getTextStyle(
 
 TextStyle _getTextStyleWithNoSize(
     FontWeight fontWeight, Color color, FontStyle fontStyle) {
-  return TextStyle(
-      fontFamily: FontConstants.fontFamily,
+  return GoogleFonts.nunito().copyWith(
       color: color,
       fontWeight: fontWeight,
       fontStyle: fontStyle);

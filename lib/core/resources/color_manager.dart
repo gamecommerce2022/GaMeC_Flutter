@@ -51,4 +51,17 @@ class ColorManager {
   static const Color orange = Color.fromARGB(255, 170, 115, 33);
 
   static const Color transparent = Colors.transparent;
+
+  /// COLOR FROM FIGMA
+  static const Color primary = Color.fromARGB(255, 168, 113, 90);
+  static const Color secondary = Color.fromARGB(255, 221, 133, 96);
+
+  static const Color titleActive = Color.fromARGB(255, 0, 0, 0);
+  static const Color body = Color.fromARGB(255, 51, 51, 51);
+  static const Color label = Color.fromARGB(255, 85, 85, 85);
+  static const Color placeHolder = Color.fromARGB(255, 136, 136, 136);
+  static const Color line = Color.fromARGB(255, 224, 207, 186);
+  static const Color inputBackground = Color.fromARGB(255, 249, 249, 249);
+  static const Color background = Color.fromARGB(255, 248, 240, 231);
+  static const Color offWhite = Color.fromARGB(255, 252, 252, 252);
 }
