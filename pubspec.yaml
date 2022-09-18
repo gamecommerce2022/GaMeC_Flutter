@@ -35,6 +35,14 @@ dependencies:
   google_fonts: ^3.0.1
   # An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.
   flutter_svg: ^1.1.5
+  # A carousel slider widget, support infinite scroll and custom child widget.
+  carousel_slider: ^4.1.1
+  # Flutter library to load and cache network images. Can also be used with placeholder and error widgets.
+  cached_network_image: ^3.2.1
+  # A collection of loading indicators animated with flutter. Heavily inspired by @tobiasahlin's SpinKit.
+  flutter_spinkit: ^5.1.0
+  # Flutter package that provides you custom clippers to help you achieve various custom shapes.
+  flutter_custom_clippers: ^2.0.0
 
 
 dev_dependencies:

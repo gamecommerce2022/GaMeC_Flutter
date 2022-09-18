@@ -39,6 +39,7 @@ class BaseMobileScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
+          mainAxisSize: MainAxisSize.max,
           children: [
             child,
             Column(
