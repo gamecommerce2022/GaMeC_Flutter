@@ -44,7 +44,7 @@ class _MyAppState extends State<GameCommerceApp> {
         init: AppLanguage(),
         builder: (controller) {
           return ScreenUtilInit(
-              designSize: const Size(360, 690),
+              designSize: const Size(375, 797),
               minTextAdapt: true,
               splitScreenMode: true,
               builder: (_, __) {

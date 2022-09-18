@@ -63,5 +63,6 @@ class ColorManager {
   static const Color line = Color.fromARGB(255, 224, 207, 186);
   static const Color inputBackground = Color.fromARGB(255, 249, 249, 249);
   static const Color background = Color.fromARGB(255, 248, 240, 231);
+  static const Color footerBackground = Color.fromARGB(255, 196, 196, 196);
   static const Color offWhite = Color.fromARGB(255, 252, 252, 252);
 }
