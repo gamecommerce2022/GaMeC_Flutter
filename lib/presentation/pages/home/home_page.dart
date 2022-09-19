@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:game_commerce_flutter/presentation/widgets/details/home/banners.dart';
+import 'package:game_commerce_flutter/presentation/widgets/details/home/collections.dart';
 import 'package:game_commerce_flutter/presentation/widgets/global/other/base_mobile_screen.dart';
 import 'package:game_commerce_flutter/presentation/widgets/global/other/spacing_container.dart';
 
@@ -20,6 +21,13 @@ class _HomePageState extends State<HomePage> {
       children:  [
         const Banners(),
         addVerticalSpace(32.h),
+        const Text('New Arrival'),
+        addVerticalSpace(32.h),
+        const Collections(),
+        addVerticalSpace(32.h),
+        const Text('Just for you'),
+        addVerticalSpace(32.h),
+        const Text('Trending'),
       ],
     ));
   }

@@ -49,6 +49,8 @@ dependencies:
   expandable: ^5.0.1
   # A flutter package project which contains a collection of cool and beautiful text animations.
   animated_text_kit: ^4.2.2
+  # Flutter plugin for playing or streaming inline YouTube videos using the official iFrame player API. This plugin supports both Android and iOS.
+  youtube_player_flutter: ^8.1.0
 
 
 dev_dependencies:

@@ -63,65 +63,62 @@ class _BannersState extends State<Banners> {
   }
 
   late final List<Widget> imageSliders = imgList
-      .map((item) => Container(
-            margin: const EdgeInsets.all(5.0),
-            child: ClipRRect(
-                borderRadius: BorderRadius.circular(16.r),
-                child: Stack(
-                  fit: StackFit.expand,
-                  children: [
-                    CachedNetworkImage(
-                      imageUrl: item.imgSrc,
-                      fit: BoxFit.fitHeight,
-                      placeholder: (context, url) => Center(
-                          child: SpinKitPouringHourGlassRefined(
-                              color: Colors.amber.shade400)),
-                      errorWidget: (context, url, error) =>
-                          const Icon(Icons.error),
-                    ),
-                    Positioned(
-                      top: 60.h,
-                      left: 12.w,
-                      width: 140.w,
-                      child: DefaultTextStyle(
-                        style: const TextStyle(
-                          fontSize: 36,
-                          wordSpacing: 2.0,
-                          letterSpacing: 2.0,
-                          fontFamily: 'Bobbers',
-                          color: ColorManager.white
-                        ),
-                        child: AnimatedTextKit(
-                          animatedTexts: [TyperAnimatedText(item.imgTitle!)],
+      .map((item) => ClipRRect(
+          borderRadius: BorderRadius.circular(16.r),
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              CachedNetworkImage(
+                imageUrl: item.imgSrc,
+                fit: BoxFit.fitHeight,
+                placeholder: (context, url) => Center(
+                    child: SpinKitPouringHourGlassRefined(
+                        color: Colors.amber.shade400)),
+                errorWidget: (context, url, error) =>
+                    const Icon(Icons.error),
+              ),
+              Positioned(
+                top: 60.h,
+                left: 12.w,
+                width: 140.w,
+                child: DefaultTextStyle(
+                  style: const TextStyle(
+                    fontSize: 36,
+                    wordSpacing: 2.0,
+                    letterSpacing: 2.0,
+                    fontFamily: 'Bobbers',
+                    color: ColorManager.white
+                  ),
+                  child: AnimatedTextKit(
+                    animatedTexts: [TyperAnimatedText(item.imgTitle!)],
+                  ),
+                ),
+              ),
+              Positioned(
+                  bottom: 48.0.h,
+                  left: 60.w,
+                  right: 60.w,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(30.r),
+                    child: BackdropFilter(
+                      filter:
+                          ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+                      child: Container(
+                        height: 40.h,
+                        decoration: BoxDecoration(
+                            color: Colors.black54.withOpacity(0.1)),
+                        child: Center(
+                          child: Text(item.imgBtnTitle ?? '',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .displayMedium
+                                  ?.copyWith(color: Colors.white)),
                         ),
                       ),
                     ),
-                    Positioned(
-                        bottom: 48.0.h,
-                        left: 60.w,
-                        right: 60.w,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(30.r),
-                          child: BackdropFilter(
-                            filter:
-                                ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
-                            child: Container(
-                              height: 40.h,
-                              decoration: BoxDecoration(
-                                  color: Colors.black54.withOpacity(0.1)),
-                              child: Center(
-                                child: Text(item.imgBtnTitle ?? '',
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .displayMedium
-                                        ?.copyWith(color: Colors.white)),
-                              ),
-                            ),
-                          ),
-                        )),
-                  ],
-                )),
-          ))
+                  )),
+            ],
+          )))
       .toList();
 
   int _current = 0;
