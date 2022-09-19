@@ -16,6 +16,8 @@ class AssetManagers {
   static const String twitterIcon = '$iconPath/Twitter.svg';
   static const String instagramIcon = '$iconPath/Instagram.svg';
   static const String youtubeIcon = '$iconPath/YouTube.svg';
+  static const String callIcon = '$iconPath/Call.svg';
+  static const String locationIcon = '$iconPath/Location.svg';
 
   static const String splashScreen = '$imagePath/splash_screen.png';
   static const String dividerImage = '$imagePath/divider.svg';

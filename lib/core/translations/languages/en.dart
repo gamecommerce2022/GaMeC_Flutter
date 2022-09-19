@@ -4,4 +4,7 @@ const Map<String, String> en = {
   'blog': 'Blog',
   'openTime': '08:00 - 22:00 - Everyday',
   'exploreCollection': 'Explore Collection',
+  'console': 'Console',
+  'game': 'Game',
+  'accessory': 'Accessory',
 };
